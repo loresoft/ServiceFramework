@@ -7,8 +7,11 @@ namespace ServiceFramework
         IServiceConfiguration Configuration { get; }
 
         string Name { get; }
+        string Status { get; }
 
         void Start();
         void Stop();
+
+        void ReportStatus(string message);
     }
 }
